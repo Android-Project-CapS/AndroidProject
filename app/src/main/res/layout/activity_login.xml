@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shubhamdubey.capstonep.MainActivity"
+    android:background="@drawable/redmaterial">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/event" />
+    <TextView
+        android:id="@+id/userlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="20dp"
+        android:text="User Login" />
+
+    <EditText
+        android:id="@+id/Text"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"
+        android:hint="Email@abc.com"
+        android:inputType="textEmailAddress"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/Text2"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/Text"
+        android:layout_alignStart="@+id/Text"
+        android:layout_below="@+id/Text"
+        android:layout_marginTop="40dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:inputType="textPassword"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/textViewsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:textStyle="italic"
+        android:text="Not have an account? SignUp Here"
+        android:textSize="14dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Text2"
+        android:background="@drawable/rounded_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:textStyle="bold"
+        android:text="LogIn" />
+
+
+</RelativeLayout>
+
